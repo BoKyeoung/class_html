@@ -1,0 +1,18 @@
+diff a/code_grid3/grid_11_1.html b/code_grid3/grid_11_1.html	(rejected hunks)
+@@ -11,8 +11,16 @@
+             display: grid;
+             border: 5px solid #333;
+             background-color: #a29bfe;
++            /* grid-template-columns: repeat(3, 1fr); */
++            grid-template-columns: 1fr minmax(200px, auto) 1fr;
+ 
+         }
++
++        .parent div {
++            border-radius: 5px;
++            margin: 10px;
++            background-color: #fff;
++        }
+     </style>
+ </head>
+ 
