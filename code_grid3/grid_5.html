@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            background-color: coral;
+            display: grid;
+            width: 500px;
+            height: 300px;
+        }
+
+        .item1 {
+            background-color: cornflowerblue;
+            grid-area: 1 / 1 / 2 / 3;
+        }
+
+        .item2 {
+            background-color: cornsilk;
+            grid-area: 1 / 2 / 3 / 3;
+            z-index: 1;
+        }
+
+        .item3 {
+            background-color: darkcyan;
+            grid-area: 2 / 2 / 2 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+
+</html>

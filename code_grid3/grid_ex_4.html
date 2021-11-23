@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid #000;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            grid-template-rows: 100px 150px 1fr 150px 100px;
+            grid-template-areas:
+                "header header header"
+                'menu main top'
+                'menu main aside'
+                'menu main bottom'
+                'footer footer footer'
+            ;
+            gap: 10px;
+        }
+
+        .container div {
+            border: 1px solid #000;
+            background-color: coral;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 축약 형 */
+            gap: 5px;
+        }
+
+        .main>div {
+            background-color: burlywood;
+            border: none;
+            display: grid;
+            align-items: center;
+        }
+
+        .top {
+            grid-area: top;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="main">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="top">top</div>
+        <div class="aside">aside</div>
+        <div class="bottom">bottom</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

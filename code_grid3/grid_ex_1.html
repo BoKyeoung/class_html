@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            border: solid 5px #000;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:
+                "header header header"
+                "menu main aside"
+                "menu footer footer"
+            ;
+            gap: 10px;
+        }
+
+        .container div {
+            background-color: darksalmon;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="main">main</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

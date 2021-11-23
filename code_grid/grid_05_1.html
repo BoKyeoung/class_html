@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px dashed #000;
+            width: 800px;
+            height: 600px;
+            display: grid;
+            background-color: cornsilk;
+            grid-template-columns: auto auto;
+            /* 
+                각자의 컬럼내에서 수평으로 정렬
+                justify-items: ~~
+                
+                기본값
+                justify-items: start;
+
+                수평 정렬(중앙)
+                justify-items: center;
+
+                수평 정렬(끝)
+                justify-items: end;
+
+            */
+
+
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
